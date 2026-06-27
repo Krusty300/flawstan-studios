@@ -18,7 +18,7 @@ export const SocialMediaProfiles = [
   },
   {
     title: "Twitter",
-    href: "https://twitter.com/KING_IN_JUNGLE",
+    href: "https://x.com/flawstana?s=21",
     icon: BsTwitter,
   },
 ];
