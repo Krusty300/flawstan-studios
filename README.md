@@ -1,7 +1,5 @@
 # Flawstan Studios - Personal Portfolio
 
-![Flawstan Studios Portfolio](/public/portfolio-preview.png)
-
 Welcome to my personal portfolio website! This is a modern, responsive, and visually stunning portfolio built with Next.js, Tailwind CSS, and Framer Motion. It showcases my work, skills, and experience as a junior developer passionate about creating beautiful digital experiences.
 
 Features
