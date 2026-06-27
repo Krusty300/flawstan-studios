@@ -12,6 +12,8 @@ import clsx from "clsx";
 import Offices from "./Offices";
 import SocialMedia from "./SocialMedia";
 import Footer from "./Footer";
+import Image from "next/image";
+import favicon from "@/app/favicon.ico";
 
 const Header = ({
   panelId,
@@ -24,15 +26,22 @@ const Header = ({
   return (
     <Container>
       <div className="flex items-center justify-between">
-        {/* Logo */}
-        <Link href={"/"} aria-label="Home">
+        {/* Logo with Favicon */}
+        <Link href={"/"} aria-label="Home" className="flex items-center gap-3">
+          <Image
+            src={favicon}
+            alt="Flawstan Studios Favicon"
+            width={32}
+            height={32}
+            className="h-8 w-8"
+          />
           <Logo invert={invert}>Flawstan Studios</Logo>
         </Link>
         <div className="flex items-center gap-x-8">
           <Button 
             href={"/contact"} 
             invert={invert}
-            className="!rounded-none" // Forces no border radius
+            className="!rounded-none"
           >
             Contact
           </Button>
@@ -129,7 +138,6 @@ const RootLayoutInner = ({ children }) => {
           aria-hidden={expanded ? "true" : undefined}
           inert={expanded ? "" : undefined}
         >
-          {/* Header */}
           <Header
             panelId={panelId}
             icon={HiMenuAlt4}
@@ -167,7 +175,6 @@ const RootLayoutInner = ({ children }) => {
                 }}
               />
             </div>
-            {/* Navigation */}
             <Navigation />
             <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>
@@ -203,7 +210,6 @@ const RootLayoutInner = ({ children }) => {
           className="relative isolate flex w-full flex-col pt-9"
         >
           <main className="w-full flex-auto">{children}</main>
-          {/* Footer */}
           <Footer />
         </motion.div>
       </motion.div>
