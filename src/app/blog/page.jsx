@@ -101,14 +101,14 @@ const BlogPage = () => {
         <FadeIn>
           {/* Search Bar */}
           <div className="mb-8">
-            <input
-              type="text"
-              placeholder="Search articles by title or content..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder:text-neutral-500 focus:border-neutral-500 focus:outline-none focus:ring-2 focus:ring-neutral-200"
-            />
-          </div>
+  <input
+    type="text"
+    placeholder="Search articles by title or content..."
+    value={searchQuery}
+    onChange={(e) => setSearchQuery(e.target.value)}
+    className="w-full rounded-none border border-neutral-300 px-4 py-3 text-neutral-900 placeholder:text-neutral-500 focus:border-neutral-500 focus:outline-none focus:ring-2 focus:ring-neutral-200"
+  />
+</div>
 
           {/* Categories */}
           <div className="flex flex-wrap gap-3">
@@ -187,42 +187,52 @@ const BlogPage = () => {
           )}
 
           {/* Newsletter Section */}
-          <div className="mt-24 bg-neutral-950 px-8 py-16 sm:px-12 sm:py-20">
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="font-display text-3xl font-medium text-white sm:text-4xl">
-                Subscribe to my newsletter
-              </h2>
-              <p className="mt-4 text-neutral-400">
-                Get the latest articles and insights delivered straight to your inbox.
-                No spam, unsubscribe anytime.
-              </p>
-              <form 
-                className="mt-8 flex gap-4 sm:justify-center"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  const email = e.target.email.value;
-                  if (email) {
-                    alert(`Thanks for subscribing with ${email}!`);
-                    e.target.reset();
-                  }
-                }}
-              >
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email"
-                  className="flex-1 rounded-full border border-neutral-700 bg-neutral-800 px-6 py-3 text-white placeholder:text-neutral-500 focus:border-neutral-500 focus:outline-none sm:flex-none sm:w-80"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="rounded-full bg-white px-8 py-3 font-medium text-neutral-950 transition hover:bg-neutral-200"
-                >
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          </div>
+< div className="mt-24 bg-neutral-950 px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
+  <div className="mx-auto max-w-2xl text-center">
+    <h2 className="font-display text-2xl font-medium text-white sm:text-3xl lg:text-4xl">
+      Subscribe to my newsletter
+    </h2>
+    <p className="mt-3 text-sm text-neutral-400 sm:mt-4 sm:text-base">
+      Get the latest articles and insights delivered straight to your inbox.
+      No spam, unsubscribe anytime.
+    </p>
+    <form 
+      className="mt-6 flex flex-col gap-3 sm:flex-row sm:gap-4 sm:justify-center"
+      onSubmit={(e) => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        if (email) {
+          // Show success state
+          const form = e.target;
+          const button = form.querySelector('button');
+          const originalText = button.textContent;
+          button.textContent = '✓ Subscribed!';
+          button.classList.add('bg-green-500', 'hover:bg-green-600');
+          form.reset();
+          
+          setTimeout(() => {
+            button.textContent = originalText;
+            button.classList.remove('bg-green-500', 'hover:bg-green-600');
+          }, 3000);
+        }
+      }}
+    >
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        className="w-full rounded-full border border-neutral-700 bg-neutral-800 px-4 py-3 text-sm text-white placeholder:text-neutral-500 focus:border-neutral-500 focus:outline-none sm:px-6 sm:text-base md:w-80"
+        required
+      />
+      <button
+        type="submit"
+        className="w-full rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200 sm:w-auto sm:px-8 sm:text-base"
+      >
+        Subscribe
+      </button>
+    </form>
+  </div>
+</div>
         </FadeIn>
       </Container>
     </>

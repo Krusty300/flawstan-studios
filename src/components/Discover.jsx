@@ -1,11 +1,11 @@
 import React from "react";
 import Section from "./Section";
 import { TagList, TagListItem } from "./TagList";
-import portfolioImage from "@/images/portfolio.png";
+import imageFile from "@/images/image.png"; // Import the image
 
 const Discover = () => {
   return (
-    <Section title="Frontend Development" image={{ src: portfolioImage, shape: 1 }}>
+    <Section title="Frontend Development" image={{ src: imageFile, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           I specialize in creating beautiful, responsive, and performant user

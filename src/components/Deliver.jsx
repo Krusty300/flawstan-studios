@@ -1,11 +1,11 @@
 import React from "react";
 import Section from "./Section";
 import List, { ListItem } from "./List";
-import portfolioImage from "@/images/portfolio.png";
+import imageFile from "@/images/image.png"; // Import the image
 
 const Deliver = () => {
   return (
-    <Section title="Tools & Workflow" image={{ src: portfolioImage, shape: 1 }}>
+    <Section title="Tools & Workflow" image={{ src: imageFile, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           I use a modern toolkit and efficient workflow to deliver high-quality

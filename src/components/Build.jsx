@@ -1,11 +1,11 @@
 import React from "react";
 import Section from "./Section";
 import Blockquote from "./Blockquote";
-import portfolioImage from "@/images/portfolio.png";
+import imageFile from "@/images/image.png"; // Import the image
 
 const Build = () => {
   return (
-    <Section title="Backend Development" image={{ src: portfolioImage, shape: 2 }}>
+    <Section title="Backend Development" image={{ src: imageFile, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           I build robust and scalable backend systems that power modern web

@@ -4,7 +4,7 @@ import Container from "./Container";
 import FadeIn from "./FadeIn";
 import StylizedImage from "./StylizedImage";
 import List, { ListItem } from "./List";
-// import portfolioImage from "../images/portfolio.png"; // Uncomment if using imported image
+import imageFile from "@/images/image.png"; // Import the image
 
 const Services = () => {
   return (
@@ -24,7 +24,7 @@ const Services = () => {
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
-                src="/portfolio.png"
+                src={imageFile}
                 width={800}
                 height={600}
                 alt="Portfolio showcase"
