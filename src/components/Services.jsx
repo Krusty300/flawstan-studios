@@ -4,7 +4,7 @@ import Container from "./Container";
 import FadeIn from "./FadeIn";
 import StylizedImage from "./StylizedImage";
 import List, { ListItem } from "./List";
-import imageFile from "@/images/dev.png"; // Import the new image
+import imageFile from "@/images/dev image.png"; // Import the new image
 
 const Services = () => {
   return (
