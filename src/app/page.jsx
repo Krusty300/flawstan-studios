@@ -12,7 +12,7 @@ export default function Home() {
             Hi, I&apos;m a Developer &amp; Designer
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Am <strong className="font-bold italic text-neutral-900">Jjamirr Eric</strong>, a{' '}
+            Am Jjamirr Eric, a{' '}
             <strong className="font-bold text-neutral-900">junior developer</strong> that creates beautiful, 
             functional websites and applications that help businesses and individuals 
             bring their ideas, needs and wants to life. Passionate about clean code, 
