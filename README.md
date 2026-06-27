@@ -1,24 +1,34 @@
-# Abdullah Agency - Next.js, Tailwind CSS & Framer Motion
+# Flawstan Studios - Personal Portfolio
 
-![Abdullah Agency](/public/agency.PNG)
+![Flawstan Studios Portfolio](/public/portfolio-preview.png)
 
-Abdullah Agency is a stunning multi-page agency website template developed using Next.js, Tailwind CSS, and Framer Motion. Designed and built by the talented Tailwind CSS team, this template offers a sleek and minimalist appearance while boasting engaging interactive elements and captivating animations powered by Framer Motion.
+Welcome to my personal portfolio website! This is a modern, responsive, and visually stunning portfolio built with Next.js, Tailwind CSS, and Framer Motion. It showcases my work, skills, and experience as a junior developer passionate about creating beautiful digital experiences.
 
-## Features
+Features
 
-- Beautifully designed agency website template.
-- Built using Tailwind CSS and Next.js for a seamless development experience.
-- Enhanced with delightful animations and transitions through Framer Motion.
-- Easy-to-update case studies and blog posts with MDX.
-- Production-ready and highly customizable for your agency's specific needs.
-- A valuable resource for learning how to build websites with Tailwind CSS and React.
+- Modern Design: Clean, minimalist design with a focus on typography and visual hierarchy
+- Fully Responsive: Optimized for all device sizes from mobile to desktop
+- Smooth Animations: Engaging animations and transitions powered by Framer Motion
+- Dynamic Content: Blog articles with MDX support for easy content updates
+- Project Showcase: Display projects with detailed case studies
+- Contact Form: Functional contact section for client inquiries
+- Dark/Light Mode: Professional dark theme with high contrast
+- SEO Optimized: Built with Next.js for optimal search engine visibility
+- Fast Performance: Optimized images and code splitting for quick load times
 
-## Getting Started
+Technologies Used
 
-To run the Abdullah Agency website locally, follow these steps:
+- Next.js 13.4 - React framework with App Router
+- Tailwind CSS - Utility-first CSS framework
+- Framer Motion - Animation library for React
+- React Icons - Icon library
+- Headless UI - Accessible UI components
+- TypeScript - Type-safe JavaScript
 
-1. **Clone the repository:**
+Installation
+
+1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/abdullah-agency.git
-   ```
+   git clone https://github.com/Krusty300/flawstan-studios.git
+   cd flawstan-studios
