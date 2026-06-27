@@ -19,14 +19,14 @@ const Build = () => {
         </p>
         <p>
           I have experience working with various databases and cloud platforms,
-          allowing me to choose the right tools for each project's specific needs.
+          allowing me to choose the right tools for each project&apos;s specific needs.
         </p>
       </div>
       <Blockquote
         author={{ name: "Jjamirr Eric (Flawstan) ", role: "Full-Stack Developer" }}
         className="mt-12"
       >
-        Building great backend systems is about more than just storing data — it is
+        Building great backend systems is about more than just storing data &mdash; it is
         about creating the foundation for exceptional user experiences.
       </Blockquote>
     </Section>

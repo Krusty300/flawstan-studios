@@ -6,8 +6,8 @@ import FadeIn from "@/components/FadeIn";
 const ContactPage = () => {
   return (
     <>
-      <PageIntro eyebrow="Contact" title="Let's work together">
-        <p>I'd love to hear from you. Let's discuss your project.</p>
+      <PageIntro eyebrow="Contact" title="Let&apos;s work together">
+        <p>I&apos;d love to hear from you. Let&apos;s discuss your project.</p>
       </PageIntro>
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
@@ -39,7 +39,7 @@ const ContactPage = () => {
                   We connect
                 </h3>
                 <p className="mt-2 text-sm text-neutral-600">
-                  I'll respond within 24-48 hours to discuss your project further.
+                  I&apos;ll respond within 24-48 hours to discuss your project further.
                 </p>
               </div>
               <div>

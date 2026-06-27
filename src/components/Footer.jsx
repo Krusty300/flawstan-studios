@@ -25,7 +25,7 @@ const ContactInfo = () => {
         Get in touch
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
-        Interested in working together? Let's connect and discuss your project.
+        Interested in working together? Let&apos;s connect and discuss your project.
       </p>
       <div className="mt-6 space-y-4">
         <div>
@@ -68,7 +68,7 @@ const Footer = () => {
             </Logo>
           </Link>
           <p className="text-sm text-neutral-700">
-            © {new Date().getFullYear()}
+            &copy; {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
